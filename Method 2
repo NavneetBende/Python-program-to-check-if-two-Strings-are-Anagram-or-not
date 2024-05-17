@@ -1,0 +1,19 @@
+# Check if two Strings are Anagram or not in Python
+from collections import Counter
+
+
+def check(s1, s2):
+    # printing counter
+    print(Counter(s1))
+    print(Counter(s2))
+    # implementing counter function
+    if Counter(s1) == Counter(s2):
+        print("The strings are anagrams.")
+    else:
+        print("The strings aren't anagrams.")
+
+
+# driver code
+s1 = "Listen"
+s2 = "silent"
+check(s1.lower(), s2.lower())
